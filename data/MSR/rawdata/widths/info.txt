@@ -1,0 +1,15 @@
+BASE="/home/yi79a/yuta/CaMa-Flood_v395b_20191030"
+EXP="MSR_03min"
+RDIR=${BASE}/out/${EXP}/00
+YSTA=1984
+SMON=1
+SDAY=1
+YEND=2010
+EMON=1
+EDAY=1
+SPINUP=0
+CROFDIR="${BASE}/inp/MSR_15min/vic/"
+CRIVHGT="${RDIR}/rivhgt.bin"                # channel depth [m] (empirical power-low)
+CRIVMAN="${RDIR}/rivman_adcp.bin"           # manning coefficient river (The one in flood plain is a global parameter; set $PMANFLD below.)
+CRIVSHP="${RDIR}/rivshp.bin"                # river cross section geometry parameter
+CRIVBTA="${RDIR}/rivbta.bin"                # river wetted perimeter parameter

@@ -1,0 +1,14 @@
+{
+"nlon": 466,
+"nlat": 276,
+"mapdir": "/peoject/uma_colin_gleason/yuta/CaMa-Flood_v395b_20191030/map/MSR_03min/",
+"west": -114.375,
+"south": 36.125,
+"hiresdir": "/project/uma_colin_gleason/yuta/CaMa-Flood_v395b_20191030/map/MSR_03min/3sec",
+"hirescat": ["n30w100.catmxy.bin", "n30w110.catmxy.bin", "n30w120.catmxy.bin", "n40w100.catmxy.bin", "n40w110.catmxy.bin", "n40w120.catmxy.bin"],
+"hiresres": 0.000833333333333,
+"hiresnlon": [12000, 12000, 12000, 12000, 12000, 12000],
+"hiresnlat": [12000, 12000, 12000, 12000, 12000, 12000],
+"hireswest": [-100, -110, -120, -100, -110, -120],
+"hiressouth": [30, 30, 30, 40, 40, 40]
+}

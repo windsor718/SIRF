@@ -1,0 +1,16 @@
+*.bin
+*.so
+*build/
+*.hdf5
+*.nc
+*.cpg
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.shp
+*.lock
+*.xml
+*.shx
+*CaMa-Flood_v395b_20191030/
+*__pycache__*
