@@ -12,9 +12,15 @@
 *.lock
 *.xml
 *.shx
+*.parquet
+*.csv
 *CaMa-Flood_v395b_20191030/
 *__pycache__*
 *missouri_widths_v01.csv
 *backup/
 *.c
 *calc_rivhgt
+*.ipynb_checkpoints
+gauge_cal.txt
+*geometry/
+*vic/

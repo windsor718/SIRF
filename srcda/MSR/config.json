@@ -23,5 +23,6 @@
     "assimconfig": "/project/uma_colin_gleason/yuta/RiDiA/srcda/MS-RiDiA/assimconfig_test.ini",
     "cachepath": "/project/uma_colin_gleason/yuta/RiDiA/srcda/MS-RiDiA/cache",
     "vecmappath": "/project/uma_colin_gleason/yuta/RiDiA/data/MS-RiDiA/src/mapout/vecmapinfo.hdf5",
-    "undef": -9999
+    "undef": -9999,
+    "dummyfile": "/home/yi79a/yuta/RiDiA/srcda/MS-RiDiA/buffer.bin"
 }

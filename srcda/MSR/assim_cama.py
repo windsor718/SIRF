@@ -8,7 +8,7 @@ import subprocess
 import os
 from distutils.util import strtobool
 from multiprocessing import Pool
-from pyletkf.pyletkf import pyletkf
+import pyletkf
 import caseExtention as ext
 import dautils as dau
 
@@ -23,7 +23,6 @@ class AssimCama(object):
         Small modification of gosh/src file is needed:
             - sample gosh file: MSR_3min_wth_DA.sh
             - you need to cache d2fldstomax and d2fldgrd in 2d map format.
-            - simply add following lines on cmf_ctrl_output_mod.F90
             - you may comment out those lines after you cached
               as these are time-independent.
         This class should be almost-case-universal to avoid bugs.
@@ -108,7 +107,7 @@ class AssimCama(object):
         self.obsncpath = varDict["obsncpath"]
         self.assimconfig = varDict["assimconfig"]
         self.undef = int(varDict["undef"])
-        self.dummyfile = "/home/yi79a/yuta/RiDiA/srcda/MS-RiDiA/buffer.bin"
+        self.dummyfile = varDict["dummyfile"]
 
         # read observations
         self.obs_dset = self.read_observation(self.obsncpath)
@@ -193,7 +192,6 @@ class AssimCama(object):
         #         f.write("{0}, {1}"
         #                 .format(ndate.strftime("%Y%m%d%H"), nT))
         return ndate, nT
-    #
 
     # utilities
     def check_consistency(self):
@@ -287,7 +285,6 @@ class AssimCama(object):
             else:
                 raise IndexError("type %s is " +
                                  "not defined".format(self.statetype[idx]))
-    #
 
     # spinup functions
     def spinup(self, sdate, edate, ensrnof=False):
@@ -330,7 +327,6 @@ class AssimCama(object):
             bpath = os.path.join(resdir,
                                 "restart_{0}.bin".format(datestring))
             subprocess.check_call(["cp", respath, bpath])
-    #
 
     # forwarding functions
     def forward(self, date, ensrnof=False, restart=True):
@@ -495,7 +491,6 @@ class AssimCama(object):
         p = Pool(self.nCPUs)
         p.map(submit_update_states, argsmap)
         p.close()
-    #
 
 
 # multiprocessing; forwarding functions

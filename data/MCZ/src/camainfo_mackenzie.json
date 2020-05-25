@@ -1,0 +1,9 @@
+{
+"mode": "uparea",
+"nlon": 760,
+"nlat": 360,
+"mapdir": "/project/uma_colin_gleason/yuta/SIRF/model/CaMa-Flood_v395b_20191030/map/MCZ_03min/",
+"west": -140,
+"south": 52.025,
+"res": 0.05
+}
